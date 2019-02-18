@@ -68,6 +68,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Alipay
 PRODUCT_PACKAGES += \
+    IFAAService \
     org.ifaa.android.manager
 
 PRODUCT_BOOT_JARS += \
