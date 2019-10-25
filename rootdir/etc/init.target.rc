@@ -52,7 +52,10 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/stability 0755 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
+#+ add for watermark
+    mkdir /mnt/vendor/persist/camera 0777 root root
     restorecon_recursive /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist/camera
     write /sys/kernel/boot_adsp/boot 1
     chown system system /dev/goodix_fp
     #chmod 0644 /dev/goodix_fp
@@ -91,6 +94,7 @@ on post-fs-data
     mkdir /data/vendor/charge_logger 0771 system system
 
 on boot
+    chown system system /sys/class/touch/touch_dev/palm_sensor
     start rmt_storage
     start rfs_access
     write /dev/cpuset/top-app/cpus 0-7
