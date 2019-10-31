@@ -1,0 +1,1 @@
+allow qrtr qrtr:netlink_route_socket { create write };
