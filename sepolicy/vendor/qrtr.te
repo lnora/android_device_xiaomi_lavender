@@ -1,1 +1,1 @@
-allow qrtr qrtr:netlink_route_socket { create write };
+allow qrtr qrtr:netlink_route_socket { create write nlmsg_write };
