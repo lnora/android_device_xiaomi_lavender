@@ -534,10 +534,12 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">80.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
-	
-	    <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
-    <bool name="config_wifi_softap_acs_supported">false</bool>
+    <dimen name="rounded_corner_radius_top">106.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">108.0px</dimen>
 
+    <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
+    <bool name="config_wifi_softap_acs_supported">false</bool>
+    
     <!-- List supported color modes. -->
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
